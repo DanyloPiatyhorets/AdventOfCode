@@ -1,4 +1,4 @@
-package adventofcode.src2024;
+package adventofcode.src2024.util;
 
 // Change this according to data input
 public class Container {

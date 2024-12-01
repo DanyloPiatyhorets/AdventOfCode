@@ -1,4 +1,6 @@
-package adventofcode.src2024;
+package adventofcode.src2024.util;
+
+import adventofcode.src2024.util.Container;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,8 +9,8 @@ import java.util.Scanner;
 
 public class Reader {
 
-    public static Container read(){
-        String filePath = "src/src2024/sources/day1.txt";
+    public static Container read(String filePath){
+//        String filePath = "src/src2024/sources/day1.txt";
 
         ArrayList<Integer> list1 = new ArrayList<>();
         ArrayList<Integer> list2 = new ArrayList<>();
