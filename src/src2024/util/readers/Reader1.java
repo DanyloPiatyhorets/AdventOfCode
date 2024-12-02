@@ -1,16 +1,16 @@
-package adventofcode.src2024.util;
+package adventofcode.src2024.util.readers;
 
-import adventofcode.src2024.util.Container;
+import adventofcode.src2024.util.containers.Container;
+import adventofcode.src2024.util.containers.Container1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Reader {
-
-    public static Container read(String filePath){
-//        String filePath = "src/src2024/sources/day1.txt";
+public class Reader1 implements Reader{
+    @Override
+    public Container1 read(String filePath) {
 
         ArrayList<Integer> list1 = new ArrayList<>();
         ArrayList<Integer> list2 = new ArrayList<>();
@@ -33,15 +33,9 @@ public class Reader {
             e.printStackTrace();
         }
 
-        // Convert lists to arrays
         int[] array1 = list1.stream().mapToInt(i -> i).toArray();
         int[] array2 = list2.stream().mapToInt(i -> i).toArray();
 
-        // Fill a container
-        return new Container(array1, array2);
-
+        return new Container1(array1, array2);
     }
-
 }
-
-
